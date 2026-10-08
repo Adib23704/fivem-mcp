@@ -26,7 +26,6 @@
     "prepare": "npm run build",
     "watch": "tsc --watch",
     "inspector": "npx @modelcontextprotocol/inspector build/index.js",
-    "sync": "rsync -av --delete fivem-plugin/mcp-bridge/ \"${FIVEM_MCP_SYNC_TARGET:-/home/eeharumt/NeoLumina/fivem-server/local/txData/lumina/resources/[plugins]/[others]/mcp-bridge/}\" && echo '✅ FiveMプラグイン同期完了！'",
     "verify": "npm run build && node scripts/verify-build.mjs"
   },
   "dependencies": {
